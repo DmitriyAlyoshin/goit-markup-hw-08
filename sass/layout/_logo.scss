@@ -3,9 +3,8 @@
 
   @include font(26, null, 1.19, $ls);
 
-  @media screen and (max-width: 767px) {
-    display: none;
-    
+  @media (max-width: 767px) {
+    display: none;    
   }
 }
 
