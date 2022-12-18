@@ -1,0 +1,32 @@
+.page-footer {
+  background-color: getColor("footer-bgd");
+}
+
+.page-footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: flex;
+}
+
+.page-footer__contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-footer__contacts {
+  @include font($fs, $fw, $lh, $ls);
+}
+
+.footer-address {
+  color: getColor("primary-white");
+}
+
+.footer-mail {
+  color: getColor("footer-contacts");
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}

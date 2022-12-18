@@ -1,0 +1,40 @@
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__icon {
+  width: 270px;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: getColor("button-bgd");
+  border-radius: 4px;
+  color: getColor("title-and-btn");
+}
+
+.features__icon--indent {
+  margin-bottom: 30px;
+}
+
+.features__picture {
+  fill: currentColor;
+}
+
+.features__subtitle--indent {
+  margin-bottom: 10px;
+}
+
+.features__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+
+  @include font($fs, null, $lh, $ls);
+}

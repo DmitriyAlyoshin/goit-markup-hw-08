@@ -1,0 +1,25 @@
+.hero {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background-hero-min.jpg");
+  background-color: getColor("bgd-hero");
+
+  text-align: center;
+}
+
+.hero__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero__title--indent {
+  margin-bottom: 30px;
+  padding-top: 200px;
+}

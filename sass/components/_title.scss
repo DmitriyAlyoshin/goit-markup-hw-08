@@ -1,0 +1,50 @@
+.hero__title {
+  color: getColor("primary-white");
+
+  @include font(44, 900, 1.36, 0.06);  
+  text-transform: uppercase;
+}
+
+.section__title {
+  color: getColor("title-and-btn");
+
+  @include font(36, null, 1.17, $ls);  
+  text-align: center;
+}
+
+.section__title--indent {
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: getColor("title-and-btn");
+
+  @include font($fs, null, 1.14, $ls);
+  text-transform: uppercase;
+}
+
+.employee-name-title {
+  color: getColor("title-and-btn");
+
+  @include font(16, 500, 1.19, $ls);
+  text-align: center;
+}
+
+.employee-name-title--indent {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.portfolio-projects__title {
+  color: getColor("title-and-btn");
+
+  @include font(18, null, 2, 0.06);
+}
+
+.portfolio-projects__title--indent {
+  display: block;
+  padding-left: 24px;
+  padding-right: 0;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}

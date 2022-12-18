@@ -1,0 +1,129 @@
+@mixin btn-padding($pt, $pr, $pb, $pl) {
+  padding-top: $pt;
+  padding-right: $pr;
+  padding-bottom: $pb;
+  padding-left: $pl;
+}
+
+%button {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 73px;
+  border-width: 0;
+
+  color: getColor("primary-white");
+  background-color: getColor("accent");
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include font(16, 500, 1.62, 0.03);
+  font-family: inherit;
+}
+
+.button-hero {
+  @extend %button;
+  @include btn-padding(10px, 32px, 10px, 32px);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: getColor("hero-btn-accent");
+  }
+
+  @include font($fs, 700, 1.88, 0.06);
+}
+
+.button-primary {
+  @extend %button;
+  @include btn-padding(6px, 22px, 6px, 22px);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-secondary {
+  @extend %button;
+  @include btn-padding(6px, 22px, 6px, 22px);
+
+  color: getColor("title-and-btn");
+  background-color: getColor("button-bgd");
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor("primary-white");
+    background-color: getColor("accent");
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button-submit {
+  @extend %button;
+
+  position: relative;
+
+  @include btn-padding(10px, 0px, 10px, 28px);
+  min-width: 200px;
+  text-align: left;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: getColor("hero-btn-accent");
+  }
+
+  @include font(null, 700, 1.88, 0.06);
+}
+
+.button-submit__icon {
+  position: absolute;
+  right: 13px;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+
+  fill: currentColor;
+}
+
+.button__modal {
+  @include btn-padding(10px, 0px, 10px, 0px);
+  text-align: center;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.button-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: getColor("primary-white");
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.button-modal-close__icon {
+  fill: currentColor;
+  color: getColor("primary-black");
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}

@@ -1,0 +1,62 @@
+.team {
+  background-color: getColor("secondary-bgd");
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  background-color: getColor("primary-white");
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__text {
+  @include font(16, null, 1.19, $ls);
+  text-align: center;
+}
+
+.team__text--indent {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.team-sociallink__item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  place-items: center;
+}
+
+.team-sociallink__item--indent {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.team-sociallink__icon {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: currentColor;
+
+  background-color: getColor("primary-white");
+  color: getColor("networks-icon");
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: getColor("accent");
+    color: getColor("primary-white");
+  }
+}

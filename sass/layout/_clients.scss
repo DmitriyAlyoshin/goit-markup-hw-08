@@ -1,0 +1,29 @@
+.clients__list {
+  display: grid;
+  grid-template-columns: repeat(6, 170px);
+  column-gap: 30px;
+}
+
+.clients__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+
+  color: getColor('networks-icon');
+  border: 1px solid getColor('networks-icon');
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+    border-color: getColor("accent");
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
