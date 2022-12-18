@@ -8,7 +8,7 @@
 .section__title {
   color: getColor("title-and-btn");
 
-  @include font(36, null, 1.17, $ls);  
+  @include font(36, null, 1.17, null);  
   text-align: center;
 }
 
@@ -19,14 +19,14 @@
 .subtitle {
   color: getColor("title-and-btn");
 
-  @include font($fs, null, 1.14, $ls);
+  @include font($fs, null, 1.14, null);
   text-transform: uppercase;
 }
 
 .employee-name-title {
   color: getColor("title-and-btn");
 
-  @include font(16, 500, 1.19, $ls);
+  @include font(16, 500, 1.19, null);
   text-align: center;
 }
 

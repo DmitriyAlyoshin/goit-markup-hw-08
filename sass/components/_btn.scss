@@ -31,7 +31,7 @@
     background-color: getColor("hero-btn-accent");
   }
 
-  @include font($fs, 700, 1.88, 0.06);
+  @include font(null, 700, 1.88, 0.06);
 }
 
 .button-primary {
