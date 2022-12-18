@@ -1,14 +1,11 @@
 .site-nav {
   position: relative;
 
-  @media (max-width: 767px) {  
-    display: none;  
+  @media (max-width: 767px) {
+    display: none;
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  // }
-  
+  display: flex;
 }
 
 .site-nav__item {
@@ -34,12 +31,10 @@
     color: getColor("accent");
   }
 
-  @media (max-width: 767px) {  
-    display: none;  
+  @media (max-width: 767px) {
+    display: none;
   }
-
 }
-  
 
 .current {
   color: getColor("accent");
@@ -77,4 +72,3 @@
 // .site-nav .item:hover::after {
 //   scale: 1;
 // }
-
