@@ -26,7 +26,7 @@
 .portfolio-projects__text {
   color: getColor("primary");
 
-  @include font(16, null, 1.88, $ls);
+  @include font(16, null, 1.88, null);
 }
 
 .portfolio-projects__text--indent {
@@ -86,5 +86,5 @@
 
   color: getColor("primary-white");
 
-  @include font(18, null, 1.56, $ls);
+  @include font(18, null, 1.56, null);
 }

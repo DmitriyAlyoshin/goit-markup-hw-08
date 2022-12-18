@@ -19,7 +19,7 @@
 .subtitle {
   color: getColor("title-and-btn");
 
-  @include font($fs, null, 1.14, null);
+  @include font(null, null, 1.14, null);
   text-transform: uppercase;
 }
 

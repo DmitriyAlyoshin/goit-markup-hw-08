@@ -43,7 +43,7 @@
 .modal__text {
   color: getColor("title-and-btn");
 
-  @include font(20, null, 1.15, $ls);
+  @include font(20, null, 1.15, null);
 
 }
 
@@ -155,7 +155,7 @@
 .modal-checkbox__label {
   color: getColor("primary");
 
-  @include font($fs, null, $lh, $ls);
+  @include font(null, null, null, null);
 
   display: flex;
   align-items: center;

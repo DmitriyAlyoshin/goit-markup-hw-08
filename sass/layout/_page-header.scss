@@ -1,11 +1,7 @@
 .page-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: getColor("header-border");
-
-  @media screen and (max-width: 760px) {
-    display: none;    
-  }
+  border-bottom-color: getColor("header-border"); 
 }
 
 .page-header__container {  

@@ -14,7 +14,7 @@
 }
 
 .page-footer__contacts {
-  @include font($fs, $fw, $lh, $ls);
+  @include font(null, null, null, null);
 }
 
 .footer-address {

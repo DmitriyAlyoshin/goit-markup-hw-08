@@ -36,5 +36,5 @@
   margin-bottom: 0;
   width: 270px;
 
-  @include font($fs, null, $lh, $ls);
+  @include font(null, null, null, null);
 }

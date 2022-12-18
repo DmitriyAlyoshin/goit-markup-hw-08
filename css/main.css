@@ -43,12 +43,26 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button-submit, .button-secondary, .button-primary, .button-hero {
@@ -63,7 +77,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  letter-spicing: em;
+  letter-spicing: 0.03em;
   font-family: inherit;
 }
 
@@ -74,9 +88,10 @@ body {
   padding-left: 32px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: px;
   font-weight: 700;
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  letter-spicing: 0.06em;
 }
 .button-hero:hover, .button-hero:focus {
   background-color: #188ce8;
@@ -120,9 +135,10 @@ body {
   text-align: left;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: px;
   font-weight: 700;
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  letter-spicing: 0.06em;
 }
 .button-submit:hover, .button-submit:focus {
   background-color: #188ce8;
@@ -180,10 +196,10 @@ body {
 
 .hero__title {
   color: #ffffff;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
-  letter-spacing: 0.06em;
+  letter-spicing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -191,6 +207,7 @@ body {
   color: #212121;
   font-size: 36px;
   line-height: 1.17;
+  letter-spicing: em;
   text-align: center;
 }
 
@@ -200,16 +217,18 @@ body {
 
 .subtitle {
   color: #212121;
-  font-size: 14px;
+  font-size: px;
   line-height: 1.14;
+  letter-spicing: em;
   text-transform: uppercase;
 }
 
 .employee-name-title {
   color: #212121;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
+  letter-spicing: em;
   text-align: center;
 }
 
@@ -222,7 +241,7 @@ body {
   color: #212121;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spicing: 0.06em;
 }
 
 .portfolio-projects__title--indent {
@@ -248,12 +267,14 @@ body {
           align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+  width: 100vw;
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
+  letter-spicing: em;
 }
 
 .page-footer__logo {
@@ -283,6 +304,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
 
 .site-nav__item {
   position: relative;
@@ -298,13 +324,18 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--title-and-btn-color);
+  font-size: px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spicing: 0.02em;
 }
 .site-nav__link:hover {
   color: #2196f3;
+}
+@media (max-width: 767px) {
+  .site-nav__link {
+    display: none;
+  }
 }
 
 .current {
@@ -339,10 +370,10 @@ body {
   color: #757575;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spicing: 0.02em;
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
@@ -423,8 +454,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   width: 270px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: px;
+  letter-spicing: em;
 }
 
 .projects__container {
@@ -487,6 +518,7 @@ body {
 .team__text {
   font-size: 16px;
   line-height: 1.19;
+  letter-spicing: em;
   text-align: center;
 }
 
@@ -617,9 +649,10 @@ body {
 }
 
 .portfolio-projects__text {
+  color: #757575;
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
+  letter-spicing: em;
 }
 
 .portfolio-projects__text--indent {
@@ -685,6 +718,7 @@ body {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
+  letter-spicing: em;
 }
 
 .page-footer {
@@ -704,9 +738,8 @@ body {
 }
 
 .page-footer__contacts {
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
+  font-size: px;
+  letter-spicing: em;
 }
 
 .footer-address {
@@ -862,6 +895,9 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: px;
+  line-height: 1.25;
+  letter-spicing: em;
 }
 
 .subscribe-form__input {
@@ -940,7 +976,7 @@ body {
   color: #212121;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  letter-spicing: em;
 }
 
 .modal__text--indent {
@@ -966,7 +1002,7 @@ body {
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
 }
 
 .form__input {
@@ -980,7 +1016,7 @@ body {
   color: #212121;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -1020,7 +1056,7 @@ body {
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -1034,31 +1070,31 @@ body {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
 }
 .modal-textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
 }
 .modal-textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
 }
 .modal-textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
 }
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.01em;
+  letter-spicing: 0.01em;
 }
 
 .modal-checkbox-group {
@@ -1066,9 +1102,9 @@ body {
 }
 
 .modal-checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
   color: #757575;
+  font-size: px;
+  letter-spicing: em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

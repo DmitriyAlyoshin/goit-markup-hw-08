@@ -15,7 +15,7 @@
 }
 
 .team__text {
-  @include font(16, null, 1.19, $ls);
+  @include font(16, null, 1.19, null);
   text-align: center;
 }
 
