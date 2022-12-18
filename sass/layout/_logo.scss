@@ -10,7 +10,16 @@
 }
 
 .page-header__logo {
+  @media (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media (max-width: 1199px) {
+    margin-right: auto;
+  }
+  @media (min-width: 1200px) {
   margin-right: 93px;
+  }
 }
 
 .logo--headercolor {
