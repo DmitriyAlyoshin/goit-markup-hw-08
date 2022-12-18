@@ -4,10 +4,13 @@
   border-bottom-color: getColor("header-border");
 }
 
-.page-header__container {
+.page-header__container {  
   display: flex;
   align-items: center;
 
   padding-top: 0;
   padding-bottom: 0;
+  width: 100vw;
+ 
 }
+

@@ -1,7 +1,14 @@
 .site-nav {
   position: relative;
 
-  display: flex;
+  @media (max-width: 767px) {  
+    display: none;  
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
+  
 }
 
 .site-nav__item {
@@ -13,7 +20,7 @@
 }
 
 .site-nav__link {
-  display: block;
+  // display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -21,12 +28,18 @@
 
   color: var(--title-and-btn-color);
 
-  @include font($fs, 500, 1.14, 0.02);
+  @include font(null, 500, 1.14, 0.02);
 
   &:hover {
     color: getColor("accent");
   }
+
+  @media (max-width: 767px) {  
+    display: none;  
+  }
+
 }
+  
 
 .current {
   color: getColor("accent");
@@ -64,3 +77,4 @@
 // .site-nav .item:hover::after {
 //   scale: 1;
 // }
+
