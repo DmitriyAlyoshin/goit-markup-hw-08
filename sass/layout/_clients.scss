@@ -1,7 +1,29 @@
+.clients__container {
+  @media (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .clients__list {
   display: grid;
-  grid-template-columns: repeat(6, 170px);
-  column-gap: 30px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+    @media (min-width: 1200px) {
+    display: grid; 
+    grid-template-rows: none;   
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
 }
 
 .clients__link {
@@ -12,10 +34,9 @@
   height: 92px;
   justify-content: center;
   align-items: center;
-  
 
-  color: getColor('networks-icon');
-  border: 1px solid getColor('networks-icon');
+  color: getColor("networks-icon");
+  border: 1px solid getColor("networks-icon");
   border-radius: 4px;
 
   &:hover,
