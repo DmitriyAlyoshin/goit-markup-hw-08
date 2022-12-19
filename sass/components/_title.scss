@@ -21,7 +21,7 @@
 .subtitle {
   color: getColor("title-and-btn");
 
-  @include font(null, null, 1.14);
+  @include font(16, null, 1.14);
   letter-spacing: 0.03em; 
   text-transform: uppercase;
 }

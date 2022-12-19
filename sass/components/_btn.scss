@@ -69,7 +69,7 @@
   @extend %button;
 
   position: relative;
-
+  margin-top: 20px;
   @include btn-padding(10px, 0px, 10px, 28px);
   min-width: 200px;
   text-align: left;

@@ -1,18 +1,28 @@
 .networks {
-  padding-top: 12px;
-  margin-left: 88px;
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  // margin-left: 88px;
+  margin-right: auto;  
 }
 
 .networks__subtitle {
+  display: block;
   color: getColor("primary-white");
+  text-align: center;  
 }
 
 .networks__list {
+  width: 226px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 10px;
+  gap: 10px;
+  
   place-items: center;
+  margin-left: auto;  
+  margin-right: auto; 
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 $teamicons: "instagram-min", "twitter-min", "facebook-min", "linkedin-min";
