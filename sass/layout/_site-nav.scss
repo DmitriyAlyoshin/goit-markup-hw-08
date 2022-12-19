@@ -32,7 +32,8 @@
 
   color: getColor('title-and-btn');
 
-  @include font(14, 500, 1.14, 0.02);
+  @include font(14, 500, 1.14);
+  letter-spacing: 0.02em; 
 
   &:hover {
     color: getColor("accent");

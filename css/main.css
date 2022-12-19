@@ -80,7 +80,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  letter-spicing: 0.03em;
+  letter-spacing: 0.02em;
   font-family: inherit;
 }
 
@@ -94,7 +94,7 @@ body {
   font-size: px;
   font-weight: 700;
   line-height: 1.88;
-  letter-spicing: 0.06em;
+  letter-spacing: 0.06em;
 }
 .button-hero:hover, .button-hero:focus {
   background-color: #188ce8;
@@ -141,7 +141,7 @@ body {
   font-size: px;
   font-weight: 700;
   line-height: 1.88;
-  letter-spicing: 0.06em;
+  letter-spacing: 0.06em;
 }
 .button-submit:hover, .button-submit:focus {
   background-color: #188ce8;
@@ -202,7 +202,7 @@ body {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
-  letter-spicing: 0.06em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -210,7 +210,7 @@ body {
   color: #212121;
   font-size: 36px;
   line-height: 1.17;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -222,7 +222,7 @@ body {
   color: #212121;
   font-size: px;
   line-height: 1.14;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -231,7 +231,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -244,7 +244,7 @@ body {
   color: #212121;
   font-size: 18px;
   line-height: 2;
-  letter-spicing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-projects__title--indent {
@@ -312,7 +312,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 
 .page-footer__logo {
@@ -397,7 +397,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  letter-spicing: 0.02em;
+  letter-spacing: 0.02em;
 }
 .site-nav__link:hover {
   color: #2196f3;
@@ -472,7 +472,7 @@ body {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.17;
-    letter-spicing: 0.02em;
+    letter-spacing: 0.02em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -482,7 +482,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
-    letter-spicing: 0.02em;
+    letter-spacing: 0.02em;
   }
 }
 .contacts__link:hover, .contacts__link:focus {
@@ -621,7 +621,7 @@ body {
   margin-bottom: 0;
   width: 100%;
   font-size: px;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 @media (max-width: 767px) {
   .features__text {
@@ -689,7 +689,7 @@ body {
 .team__text {
   font-size: 16px;
   line-height: 1.19;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -823,7 +823,7 @@ body {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-projects__text--indent {
@@ -889,7 +889,7 @@ body {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 
 .page-footer {
@@ -910,7 +910,7 @@ body {
 
 .page-footer__contacts {
   font-size: px;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 
 .footer-address {
@@ -1068,7 +1068,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: px;
   line-height: 1.25;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 
 .subscribe-form__input {
@@ -1107,6 +1107,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  min-height: 500px;
   z-index: 5;
   overflow: hidden;
   visibility: hidden;
@@ -1182,7 +1183,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.175;
-  letter-spicing: 0.02em;
+  letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1193,6 +1194,7 @@ body {
 .mobile-menu-social-wrap {
   position: fixed;
   left: 0;
+  overflow: visible;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,12 +1205,12 @@ body {
 }
 @media (max-width: 399px) {
   .mobile-menu-social-wrap {
-    bottom: 205px;
+    bottom: 255px;
   }
 }
 @media (min-width: 400px) {
   .mobile-menu-social-wrap {
-    bottom: 155px;
+    bottom: 205px;
   }
 }
 
@@ -1220,6 +1222,30 @@ body {
   margin-bottom: 64px;
   margin-left: 40px;
   padding: 0;
+}
+
+.mobile-menu-contacts__tel {
+  display: block;
+  margin-bottom: 32px;
+  color: #2196f3;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 480px) {
+  .mobile-menu-contacts__tel {
+    margin-right: 100px;
+  }
+}
+
+.mobile-menu-contacts__mail {
+  display: block;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu-sociallink {
@@ -1272,7 +1298,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
-  letter-spicing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
 .backdrop {
@@ -1321,7 +1347,7 @@ body {
   color: #212121;
   font-size: 20px;
   line-height: 1.15;
-  letter-spicing: em;
+  letter-spacing: 0.03em;
 }
 
 .modal__text--indent {
@@ -1347,7 +1373,7 @@ body {
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
 }
 
 .form__input {
@@ -1361,7 +1387,7 @@ body {
   color: #212121;
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -1401,7 +1427,7 @@ body {
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -1415,31 +1441,31 @@ body {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
 }
 .modal-textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
 }
 .modal-textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
 }
 .modal-textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
 }
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.17;
-  letter-spicing: 0.01em;
+  letter-spacing: 0.01em;
 }
 
 .modal-checkbox-group {
@@ -1451,7 +1477,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  letter-spicing: 0.03em;
+  letter-spacing: 0.03em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

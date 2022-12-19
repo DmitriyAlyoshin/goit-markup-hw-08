@@ -15,7 +15,8 @@
 }
 
 .team__text {
-  @include font(16, null, 1.19, null);
+  @include font(16, null, 1.19);
+  letter-spacing: 0.03em; 
   text-align: center;
 }
 

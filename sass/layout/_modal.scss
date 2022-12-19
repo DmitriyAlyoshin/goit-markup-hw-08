@@ -43,8 +43,8 @@
 .modal__text {
   color: getColor("title-and-btn");
 
-  @include font(20, null, 1.15, null);
-
+  @include font(20, null, 1.15);
+  letter-spacing: 0.03em;
 }
 
 .modal__text--indent {
@@ -70,7 +70,8 @@
 
   color: getColor("primary");
 
-  @include font(12, null, 1.17, 0.01);
+  @include font(12, null, 1.17);
+  letter-spacing: 0.01em; 
 }
 
 .form__input {
@@ -84,8 +85,9 @@
 
   color: getColor("title-and-btn");
 
-  @include font(12, null, 1.17, 0.01);
- 
+  @include font(12, null, 1.17);
+  letter-spacing: 0.01em; 
+
   border: 1px solid getColor("modal-border");
   border-radius: 4px;
   outline: none;
@@ -128,7 +130,8 @@
 
   color: getColor("primary");
 
-  @include font(12, null, 1.17, 0.01);  
+  @include font(12, null, 1.17);
+  letter-spacing: 0.01em; 
 
   border: 1px solid getColor("modal-border");
   border-radius: 4px;
@@ -144,7 +147,8 @@
   &::placeholder {
     color: getColor("placeholder");
 
-    @include font(12, null, 1.17, 0.01);  
+    @include font(12, null, 1.17);
+    letter-spacing: 0.01em; 
   }
 }
 
@@ -155,13 +159,14 @@
 .modal-checkbox__label {
   color: getColor("primary");
 
-  @include font(14, 400, 1.71, 0.03);
+  @include font(14, 400, 1.71);
+  letter-spacing: 0.03em; 
 
   display: flex;
   align-items: center;
 
   &::before {
-    content: '';
+    content: "";
     width: 16px;
     height: 15px;
     border: 2px solid getColor("title-and-btn");

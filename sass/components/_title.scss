@@ -1,14 +1,16 @@
 .hero__title {
   color: getColor("primary-white");
 
-  @include font(44, 900, 1.36, 0.06);  
+  @include font(44, 900, 1.36); 
+  letter-spacing: 0.06em; 
   text-transform: uppercase;
 }
 
 .section__title {
   color: getColor("title-and-btn");
 
-  @include font(36, null, 1.17, null);  
+  @include font(36, null, 1.17); 
+  letter-spacing: 0.03em; 
   text-align: center;
 }
 
@@ -19,14 +21,16 @@
 .subtitle {
   color: getColor("title-and-btn");
 
-  @include font(null, null, 1.14, null);
+  @include font(null, null, 1.14);
+  letter-spacing: 0.03em; 
   text-transform: uppercase;
 }
 
 .employee-name-title {
   color: getColor("title-and-btn");
 
-  @include font(16, 500, 1.19, null);
+  @include font(16, 500, 1.19);
+  letter-spacing: 0.03em; 
   text-align: center;
 }
 
@@ -38,7 +42,8 @@
 .portfolio-projects__title {
   color: getColor("title-and-btn");
 
-  @include font(18, null, 2, 0.06);
+  @include font(18, null, 2);
+  letter-spacing: 0.03em; 
 }
 
 .portfolio-projects__title--indent {

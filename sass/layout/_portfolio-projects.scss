@@ -26,7 +26,8 @@
 .portfolio-projects__text {
   color: getColor("primary");
 
-  @include font(16, null, 1.88, null);
+  @include font(16, null, 1.88);
+  letter-spacing: 0.03em; 
 }
 
 .portfolio-projects__text--indent {
@@ -86,5 +87,6 @@
 
   color: getColor("primary-white");
 
-  @include font(18, null, 1.56, null);
+  @include font(18, null, 1.56);
+  letter-spacing: 0.03em; 
 }

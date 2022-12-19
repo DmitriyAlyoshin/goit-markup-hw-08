@@ -30,14 +30,16 @@
 .contacts__link {
   @media screen and (min-width: 768px) {
     display: flex;
-    @include font(12, 500, 1.17, 0.02);
+    @include font(12, 500, 1.17);
+    letter-spacing: 0.02em; 
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    @include font(14, 500, 1.14, 0.02);
+    @include font(14, 500, 1.14);
+    letter-spacing: 0.02em; 
   }
 
   color: getColor("primary");

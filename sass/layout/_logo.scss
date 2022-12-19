@@ -1,7 +1,8 @@
 .logo {
   font-family: "Raleway", sans-serif;
 
-  @include font(26, null, 1.19, null);  
+  @include font(26, null, 1.19);  
+  letter-spacing: 0.03em; 
 }
 
 .page-footer__logo {

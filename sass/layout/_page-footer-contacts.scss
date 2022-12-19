@@ -14,7 +14,8 @@
 }
 
 .page-footer__contacts {
-  @include font(null, null, null, null);
+  @include font(null, null, null);
+  letter-spacing: 0.03em; 
 }
 
 .footer-address {
