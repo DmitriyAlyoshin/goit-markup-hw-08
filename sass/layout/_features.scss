@@ -60,7 +60,9 @@
 
 .features__text {
   @media (max-width: 767px) {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   margin-top: 0;

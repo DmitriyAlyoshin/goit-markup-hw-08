@@ -1,5 +1,8 @@
 .projects__container {
   padding-top: 0;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .projects__list {
