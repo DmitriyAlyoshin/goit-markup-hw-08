@@ -30,7 +30,7 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  color: var(--title-and-btn-color);
+  color: getColor('title-and-btn');
 
   @include font(14, 500, 1.14, 0.02);
 

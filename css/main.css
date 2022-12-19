@@ -45,6 +45,7 @@ body {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -392,7 +393,7 @@ body {
   padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--title-and-btn-color);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -1107,17 +1108,24 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 5;
-  overflow: auto;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: palegreen;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .mobile-menu.is-open {
+  visibility: visible;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -1143,7 +1151,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: palegreen;
+  background: transparent;
   border: none;
   border-radius: 50%;
 }
@@ -1155,6 +1163,25 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-mobile-menu-close__icon:hover, .button-mobile-menu-close__icon:focus {
+  color: #2196f3;
+}
+
+.mobile-site-nav {
+  display: block;
+}
+
+.mobile-site-nav__item {
+  padding-bottom: 32px;
+}
+
+.mobile-site-nav__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.175;
+  letter-spicing: 0.02em;
+}
+.mobile-site-nav__link:hover {
   color: #2196f3;
 }
 

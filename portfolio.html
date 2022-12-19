@@ -24,43 +24,59 @@
     <!--https://www.figma.com/file/L1sQE5gJmSrHmVDS6Bs9R8/Web-Studio-(Version-2.1)-(Copy)?node-id=0%3A1-->
 
     <!--Site header!-->
+<header class="container page-header">
 
-        <header class="container page-header">
-        
-            <nav class="page-header__container">
-        
-                <a href="./index.html" lang="en" class="logo logo--headercolor page-header__logo">
-                    <span class="logo--partcolor">Web</span>Studio</a>
-        
-                <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false"
-                    aria-controls="mobile-menu">
-                    <svg class="button-mobile-menu__icon" width="24" height="16">
-                        <use href="./images/icons.svg#icon-icon-mobile-menu"></use>
+    <nav class="page-header__container">
+
+        <a href="./index.html" lang="en" class="logo logo--headercolor page-header__logo">
+            <span class="logo--partcolor">Web</span>Studio</a>
+
+        <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg class="button-mobile-menu__icon" width="24" height="16">
+                <use href="./images/icons.svg#icon-icon-mobile-menu"></use>
+            </svg>
+        </button>
+
+        <ul class="site-nav">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студія</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+        </ul>
+
+        <ul class="contacts">
+            <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
+                    <svg class="contacts__item--icon-envelope">
+                        <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
-                </button>
-        
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
-                </ul>
-        
-                <ul class="contacts">
-                    <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
-                            <svg class="contacts__item--icon-envelope">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a></li>
-                    <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
-                            <svg class="contacts__item--icon-smartphone">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a></li>
-                </ul>
-            </nav>
-        
-        
-        </header>
+                    info@devstudio.com</a></li>
+            <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
+                    <svg class="contacts__item--icon-smartphone">
+                        <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+
+        <button class="button-mobile-menu-close js-close-menu">
+            <svg class="button-mobile-menu-close__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-Cross-min"></use>
+            </svg>
+        </button>
+        <ul class="mobile-site-nav">
+            <li class="mobile-site-nav__item"><a href="./index.html" class="mobile-site-nav__link current">Студія</a>
+            </li>
+            <li class="mobile-site-nav__item"><a href="./portfolio.html" class="mobile-site-nav__link">Портфоліо</a>
+            </li>
+            <li class="mobile-site-nav__item"><a href="" class="mobile-site-nav__link">Контакти</a></li>
+        </ul>
+
+    </div>
+
+
+</header>
 
     <!--Main part!-->
 
@@ -299,6 +315,8 @@
         </section>
 
     </footer>
+
+    <script src="./js/modal-menu.js"></script>
 
 </body>
 
