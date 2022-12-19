@@ -1107,7 +1107,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  min-height: 500px;
+  min-height: 550px;
   z-index: 5;
   overflow: hidden;
   visibility: hidden;
@@ -1118,11 +1118,13 @@ body {
       flex-wrap: wrap;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
+  outline: none;
+  border: none;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
@@ -1131,6 +1133,10 @@ body {
   visibility: visible;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-site-nav {
@@ -1205,12 +1211,12 @@ body {
 }
 @media (max-width: 399px) {
   .mobile-menu-social-wrap {
-    bottom: 255px;
+    bottom: 285px;
   }
 }
 @media (min-width: 400px) {
   .mobile-menu-social-wrap {
-    bottom: 205px;
+    bottom: 235px;
   }
 }
 
