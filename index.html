@@ -16,7 +16,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-    
+
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -33,7 +33,8 @@
             <a href="./index.html" lang="en" class="logo logo--headercolor page-header__logo">
                 <span class="logo--partcolor">Web</span>Studio</a>
 
-            <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
                 <svg class="button-mobile-menu__icon" width="24" height="16">
                     <use href="./images/icons.svg#icon-icon-mobile-menu"></use>
                 </svg>
@@ -47,7 +48,7 @@
 
             <ul class="contacts">
                 <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__item--icon-envelope" >
+                        <svg class="contacts__item--icon-envelope">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a></li>
@@ -59,7 +60,25 @@
             </ul>
         </nav>
 
-        
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+
+            <button class="button-mobile-menu-close js-close-menu">
+                <svg class="button-mobile-menu-close__icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-Cross-min"></use>
+                </svg>
+            </button>
+            <ul class="mobile-site-nav">
+                <li class="mobile-site-nav__item"><a href="./index.html"
+                        class="mobile-site-nav__link current">Студія</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="./portfolio.html" class="mobile-site-nav__link">Портфоліо</a>
+                </li>
+                <li class="mobile-site-nav__item"><a href="" class="mobile-site-nav__link">Контакти</a></li>
+            </ul>
+
+        </div>
+
+
     </header>
 
     <!--Main part!-->
@@ -149,7 +168,7 @@
                         <p lang="en" class="team__text team__text--indent">Product Designer</p>
                         <ul class="team-sociallink__item team-sociallink__item--indent">
                             <li class="">
-                                <a href="" class="team-sociallink__icon" aria-label="Instagram" >
+                                <a href="" class="team-sociallink__icon" aria-label="Instagram">
                                     <svg class="icon-networks" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
@@ -371,11 +390,9 @@
                             <a href="https://goo.gl/maps/ekGpi4PjUEy4v1Jb8" target="_blank" rel="noopener noreferrer"
                                 class="footer-address">м. Київ, пр-т Лесі Українки, 26</a>
                         </li>
-                        <li class="item"><a href="mailto:info@devstudio.com"
-                            class="footer-mail">info@devstudio.com</a>
+                        <li class="item"><a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a>
                         </li>
-                        <li class="item"><a href="tel:+380961111111" 
-                            class="footer-mail">+38 096 111 11 11</a></li>
+                        <li class="item"><a href="tel:+380961111111" class="footer-mail">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
@@ -384,7 +401,7 @@
                 <b class="subtitle networks__subtitle">приєднуйтесь</b>
 
                 <ul class="networks__list">
-                    <li >
+                    <li>
                         <a href="" class="teamicon-instagram-min" aria-label="Instagram">
                         </a><span lang="en" class="visually-hidden">Instagram</span>
                     </li>
@@ -479,8 +496,9 @@
                 <div class="modal-checkbox-group">
                     <input type="checkbox" id="rules" class="modal-checkbox visually-hidden" name="rules" value=" ">
                     <label for="rules" class="modal-checkbox__label"> Погоджуюся з розсилкою та приймаю
-                        <a href="https://zakon.rada.gov.ua/laws/show/998_158#Text" target="_blank" rel="noopener noreferrer"
-                            rel="noopener noreferrer" class="modal-checkbox__link">Умови договору</a></label>
+                        <a href="https://zakon.rada.gov.ua/laws/show/998_158#Text" target="_blank"
+                            rel="noopener noreferrer" rel="noopener noreferrer" class="modal-checkbox__link">Умови
+                            договору</a></label>
                 </div>
 
 
@@ -490,9 +508,7 @@
 
     </div>
 
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <button class="button-mobile-menu-close js-close-menu"></button>
-    </div>
+
 
     <script src="./js/modal.js"></script>
     <script src="./js/modal-menu.js"></script>

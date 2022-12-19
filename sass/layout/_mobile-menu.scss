@@ -1,0 +1,60 @@
+// .mobile-menu {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     
+// }
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5; 
+    overflow: auto;   
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: palegreen;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+
+.mobile-site-nav {
+    display: block;
+    padding-top: 48px;
+    padding-left: 40px;
+}
+
+.button-mobile-menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: palegreen;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-mobile-menu-close__icon {
+  fill: currentColor;
+  color: getColor("primary-black");
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
+  }
+}

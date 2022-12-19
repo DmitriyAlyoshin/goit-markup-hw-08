@@ -155,7 +155,7 @@
 .modal-checkbox__label {
   color: getColor("primary");
 
-  @include font(null, null, null, null);
+  @include font(14, 400, 1.71, 0.03);
 
   display: flex;
   align-items: center;

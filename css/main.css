@@ -264,6 +264,7 @@ body {
 
 .page-header__container {
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +293,7 @@ body {
   padding: 0;
   margin: 0;
   top: 22px;
-  right: 22px;
+  right: 8px;
   background-color: #ffffff;
   border: none;
   fill: currentColor;
@@ -1099,6 +1100,64 @@ body {
           transform: translate(-75px, -50%);
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  overflow: auto;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: palegreen;
+}
+
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-site-nav {
+  display: block;
+  padding-top: 48px;
+  padding-left: 40px;
+}
+
+.button-mobile-menu-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: palegreen;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-mobile-menu-close__icon {
+  fill: currentColor;
+  color: #000000;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-mobile-menu-close__icon:hover, .button-mobile-menu-close__icon:focus {
+  color: #2196f3;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1272,8 +1331,10 @@ body {
 
 .modal-checkbox__label {
   color: #757575;
-  font-size: px;
-  letter-spicing: em;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spicing: 0.03em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
