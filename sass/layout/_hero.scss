@@ -1,5 +1,6 @@
 .hero {
-  height: 600px;
+  width: 100%;
+  height: 60vh;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -8,10 +9,28 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/background-hero-min.jpg");
+    image-set("../../images/bgd_hero/Hero_mobile_1x-min.jpg" 1x,
+    "../../images/bgd_hero/Hero_mobile_2x-min.jpg" 2x);
   background-color: getColor("bgd-hero");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   text-align: center;
+}
+
+@media (min-width: 480px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    image-set("../../images/bgd_hero/Hero_mobile_1x-min.jpg" 1x,
+    "../../images/bgd_hero/Hero_mobile_2x-min.jpg" 2x);
+    background-size: 480px 400px;
+  }
 }
 
 .hero__container {
@@ -21,5 +40,5 @@
 
 .hero__title--indent {
   margin-bottom: 30px;
-  padding-top: 200px;
+  padding-top: 115px;
 }
