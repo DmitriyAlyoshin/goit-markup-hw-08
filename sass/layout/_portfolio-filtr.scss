@@ -4,13 +4,32 @@
 
 .filtr__container {
   padding-bottom: 0;
+  @media (max-width: 1199px) {
+    padding-top: 60px;
+  }
 }
 
 .filtr__list {
   display: flex;
   justify-content: center;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
 }
 
-.filtr__item:not(:last-child) {
-  margin-right: 8px;
+.filtr__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media (min-width: 440px) and (max-width: 767px) {
+    &:nth-child(3) {
+      margin-right: 80px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }

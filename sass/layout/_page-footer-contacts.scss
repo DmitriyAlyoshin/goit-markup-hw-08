@@ -24,6 +24,9 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__contacts {
