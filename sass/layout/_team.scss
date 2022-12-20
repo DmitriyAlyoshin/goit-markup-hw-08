@@ -1,19 +1,10 @@
 .team {
+  max-width: 1600px;
+  margin: 0 auto;
+  
   background-color: getColor("secondary-bgd");
-  @media (min-width: 480px) {
-    margin: 0 auto;
-    width: 480px;
-  }
 
-  @media screen and (min-width: 768px) {
-    margin: 0 auto;
-    width: 768px;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 auto;
-    width: 1200px;
-  }
+  background-size: cover;  
 }
 
 .team__container {
@@ -21,7 +12,7 @@
     
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+  } 
 }
 
 .team__list {

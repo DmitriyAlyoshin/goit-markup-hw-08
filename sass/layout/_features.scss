@@ -1,4 +1,9 @@
 .features {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.features__container {
 @media (max-width: 1199px) {
   padding-top: 60px;
   padding-bottom: 60px;  
@@ -11,7 +16,7 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+     gap: 30px;
   }
 }
 

@@ -1,30 +1,25 @@
 .page-header {
+  max-width: 1600px;
+  margin: 0 auto;
+
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: getColor("header-border");
-
-  padding-top: 0;
-  padding-bottom: 0;
+  border-bottom-color: getColor("header-border");  
 }
 
 .page-header__container {
   position: relative;
   overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;  
+}
  
-
+.page-header__nav {
   display: flex;
   align-items: center;
-
-  @media (min-width: 480px) {
-    width: 100%;
-  }
-  @media (min-width: 768px) {
-    width: 100%;
-  }
-  @media (min-width: 1200px) {
-    width: 100%;
-  }
 }
+
+  
 
 .button-mobile-menu-open {
   position: absolute;

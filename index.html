@@ -26,39 +26,42 @@
 
     <!--Site header!-->
 
-    <header class="container page-header">
+    <header class="page-header">
 
-        <nav class="page-header__container">
+        <div class="container page-header__container">
 
-            <a href="./index.html" lang="en" class="logo logo--headercolor page-header__logo">
-                <span class="logo--partcolor">Web</span>Studio</a>
+            <nav class="page-header__nav">
 
-            <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false"
-                aria-controls="mobile-menu">
-                <svg class="button-mobile-menu__icon" width="24" height="16">
-                    <use href="./images/icons.svg#icon-icon-mobile-menu"></use>
-                </svg>
-            </button>
+                <a href="./index.html" lang="en" class="logo logo--headercolor page-header__logo">
+                    <span class="logo--partcolor">Web</span>Studio</a>
 
-            <ul class="site-nav">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студія</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
-            </ul>
+                <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <svg class="button-mobile-menu__icon" width="24" height="16">
+                        <use href="./images/icons.svg#icon-icon-mobile-menu"></use>
+                    </svg>
+                </button>
 
-            <ul class="contacts">
-                <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__item--icon-envelope">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__item--icon-smartphone">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
-        </nav>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студія</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+                </ul>
+
+                <ul class="contacts">
+                    <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="contacts__item--icon-envelope">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">
+                            <svg class="contacts__item--icon-smartphone">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="mobile-menu js-menu-container" id="mobile-menu">
 
@@ -120,50 +123,54 @@
             </div>
         </section>
 
-        <section class="container features">
-            <h2 class="section__title visually-hidden">Наші переваги</h2>
+        <section class="features">
+            <div class="container features__container">
+                <h2 class="section__title visually-hidden">Наші переваги</h2>
 
-            <ul class="features__list">
-                <li class="features__item">
-                    <div class="features__icon features__icon--indent">
-                        <svg class="features__picture" width="70" height="70">
-                            <use href="./images/icons.svg#icon-antenna"></use>
-                        </svg>
-                    </div>
-                    <h3 class="subtitle features__subtitle--indent">увага до деталей</h3>
-                    <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування
-                        позиції.</p>
-                </li>
-                <li class="features__item">
-                    <div class="features__icon features__icon--indent">
-                        <svg class="features__picture" width="70" height="70">
-                            <use href="./images/icons.svg#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <h3 class="subtitle features__subtitle--indent">пунктуальність</h3>
-                    <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                    </p>
-                </li>
-                <li class="features__item">
-                    <div class="features__icon features__icon--indent">
-                        <svg class="features__picture" width="70" height="70">
-                            <use href="./images/icons.svg#icon-diagram"></use>
-                        </svg>
-                    </div>
-                    <h3 class="subtitle features__subtitle--indent">планування</h3>
-                    <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li class="features__item">
-                    <div class="features__icon features__icon--indent">
-                        <svg class="features__picture" width="70" height="70">
-                            <use href="./images/icons.svg#icon-astronaut"></use>
-                        </svg>
-                    </div>
-                    <h3 class="subtitle features__subtitle--indent">сучасні технології</h3>
-                    <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                    </p>
-                </li>
-            </ul>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <div class="features__icon features__icon--indent">
+                            <svg class="features__picture" width="70" height="70">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="subtitle features__subtitle--indent">увага до деталей</h3>
+                        <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування
+                            позиції.</p>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__icon features__icon--indent">
+                            <svg class="features__picture" width="70" height="70">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="subtitle features__subtitle--indent">пунктуальність</h3>
+                        <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
+                            себе.
+                        </p>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__icon features__icon--indent">
+                            <svg class="features__picture" width="70" height="70">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="subtitle features__subtitle--indent">планування</h3>
+                        <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+                    <li class="features__item">
+                        <div class="features__icon features__icon--indent">
+                            <svg class="features__picture" width="70" height="70">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="subtitle features__subtitle--indent">сучасні технології</h3>
+                        <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових
+                            завдань.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="projects">

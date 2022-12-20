@@ -1,4 +1,10 @@
+.clients {
+  
+ max-width: 1600px;
+  margin: 0 auto;
+}
 .clients__container {
+  
   @media (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
