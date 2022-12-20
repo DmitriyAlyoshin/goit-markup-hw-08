@@ -1,45 +1,89 @@
 .subscribe {
-  // padding-top: 12px;
   display: block;
   text-align: center;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 9px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    width: 570px;
+  }
 }
 
 .subscribe__subtitle {
   color: getColor("primary-white");
+
+  @media (min-width: 1200px) {
+    margin-right: 250px;
+  }
 }
 
 .subscribe-form__field {
   position: relative;
   margin-top: 30px;
-  // margin-bottom: 50px;
-  // display: inline-block;
+  display: inline-block;
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    width: 450px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 0;
+    margin-right: 0;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
 }
 
 .subscribe-form__label {
   position: absolute;
   left: 15px;
   top: 15%;
+
   transform: translate(5px, 0);
+
+  @media (min-width: 768px) {
+    transform: translate(0, -2px);
+  }
+
+  @media (min-width: 1200px) {
+    transform: translate(5px, 140%);
+  }
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @include font(14, 400, 1.25);
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
 }
 
 .subscribe-form__input {
   height: 50px;
   width: 100%;
-  // margin-right: 12px;
-  // padding-left: 16px;
+
+  @media (min-width: 1200px) {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
 
   color: getColor("footer-form");
+
   outline: none;
   background-color: transparent;
   border: 1px solid getColor("footer-border-form");
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  padding-left: 20px;
 
   &:focus {
     border-color: getColor("accent");
@@ -49,5 +93,11 @@
   &:not(:placeholder-shown) + .subscribe-form__label {
     color: getColor("primary-white");
     transform: translate(5px, -220%);
+    @media (min-width: 768px) {
+      transform: translate(-175%, -2px);
+    }
+    @media (min-width: 1200px) {
+      transform: translate(-175%, 140%);
+    }
   }
 }

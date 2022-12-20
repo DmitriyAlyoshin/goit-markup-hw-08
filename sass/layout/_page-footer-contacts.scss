@@ -22,6 +22,7 @@
 
   @media (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -30,6 +31,16 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+   @media (min-width: 768px) {
+    margin-left: 76px;
+  }
+
+  @media (min-width: 1200px) {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @include font(14, 400, 1.26);
   font-style: normal;

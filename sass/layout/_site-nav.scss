@@ -47,7 +47,7 @@
 .current {
   color: getColor("accent");
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     &::after {
       position: absolute;
       left: 0px;
