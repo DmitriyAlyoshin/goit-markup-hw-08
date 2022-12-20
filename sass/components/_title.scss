@@ -1,16 +1,22 @@
 .hero__title {
   color: getColor("primary-white");
 
-  @include font(44, 900, 1.36); 
-  letter-spacing: 0.06em; 
+  @include font(26, 900, 1.62);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    @include font(44, 900, 1.36);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
 .section__title {
   color: getColor("title-and-btn");
 
-  @include font(36, null, 1.17); 
-  letter-spacing: 0.03em; 
+  @include font(36, null, 1.17);
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -22,7 +28,7 @@
   color: getColor("title-and-btn");
 
   @include font(14, null, 1.14);
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -30,7 +36,7 @@
   color: getColor("title-and-btn");
 
   @include font(16, 500, 1.19);
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -43,7 +49,7 @@
   color: getColor("title-and-btn");
 
   @include font(18, null, 2);
-  letter-spacing: 0.03em; 
+  letter-spacing: 0.03em;
 }
 
 .portfolio-projects__title--indent {
