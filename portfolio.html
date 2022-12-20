@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
+
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -25,27 +26,28 @@
 
     <!--Site header!-->
     <header class="page-header">
-    
+
         <div class="container page-header__container">
-    
+
             <nav class="page-header__nav">
-    
+
                 <a href="./index.html" lang="en" class="logo logo--headercolor page-header__logo">
                     <span class="logo--partcolor">Web</span>Studio</a>
-    
+
                 <button type="button" class="button-mobile-menu-open js-open-menu" aria-expanded="false"
                     aria-controls="mobile-menu">
                     <svg class="button-mobile-menu__icon" width="24" height="16">
                         <use href="./images/icons.svg#icon-icon-mobile-menu"></use>
                     </svg>
                 </button>
-    
+
                 <ul class="site-nav">
                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a>
+                    </li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
                 </ul>
-    
+
                 <ul class="contacts">
                     <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">
                             <svg class="contacts__item--icon-envelope">
@@ -60,29 +62,30 @@
                 </ul>
             </nav>
         </div>
-    
+
         <div class="mobile-menu js-menu-container" id="mobile-menu">
-    
+
             <button class="button-mobile-menu-close js-close-menu">
                 <svg class="button-mobile-menu-close__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-Cross-min"></use>
                 </svg>
             </button>
             <ul class="mobile-site-nav">
-                <li class="mobile-site-nav__item"><a href="./index.html" class="mobile-site-nav__link current">Студія</a>
+                <li class="mobile-site-nav__item"><a href="./index.html"
+                        class="mobile-site-nav__link current">Студія</a>
                 </li>
                 <li class="mobile-site-nav__item"><a href="./portfolio.html" class="mobile-site-nav__link">Портфоліо</a>
                 </li>
                 <li class="mobile-site-nav__item"><a href="" class="mobile-site-nav__link">Контакти</a></li>
             </ul>
-    
+
             <div class="mobile-menu-social-wrap">
-    
+
                 <div class="mobile-menu-contacts mobile-menu-contacts--indent">
                     <a href="tel:+380961111111" class="mobile-menu-contacts__tel">+38 096 111 11 11</a>
                     <a href="mailto:info@devstudio.com" class="mobile-menu-contacts__mail">info@devstudio.com</a>
                 </div>
-    
+
                 <ul class="mobile-menu-sociallink mobile-menu-sociallink--indent">
                     <li class="mobile-menu-sociallink__link">
                         <a href="" class="mobile-menu-sociallink__item" aria-label="Instagram">
@@ -101,12 +104,12 @@
                             <span lang="en">Linkedin</span></a>
                     </li>
                 </ul>
-    
+
             </div>
-    
+
         </div>
-    
-    
+
+
     </header>
 
     <!--Main part!-->
@@ -140,7 +143,11 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-1-min.jpg" class="portfolio-projects__foto" alt="Фото команди">
+                                <img srcset="
+                                    ./images/portfolio/team_1x-min.jpg 1x,
+                                    ./images/portfolio/team_2x-min.jpg 2x,
+                                    ./images/portfolio/team_3x-min.jpg 3x" src="./images/portfolio/team_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото команди">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну особу.
@@ -153,7 +160,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-2-min.jpg" class="portfolio-projects__foto" alt="Фото баскетбол">
+                                <img srcset="
+                                    ./images/portfolio/basketball_1x-min.jpg 1x,
+                                    ./images/portfolio/basketball_2x-min.jpg 2x,
+                                    ./images/portfolio/basketball_3x-min.jpg 3x" 
+                                    src="./images/portfolio/basketball_1x-min.jpg" 
+                                    class="portfolio-projects__foto" alt="Фото баскетбол">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -168,7 +180,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-3-min.jpg" class="portfolio-projects__foto" alt="Фото ресторан">
+                                <img srcset="
+                                    ./images/portfolio/restaurant_1x-min.jpg 1x,
+                                    ./images/portfolio/restaurant_2x-min.jpg 2x,
+                                    ./images/portfolio/restaurant_3x-min.jpg 3x" 
+                                    src="./images/portfolio/restaurant_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото ресторан">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -183,7 +200,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-4-min.jpg" class="portfolio-projects__foto" alt="Фото навушники" >
+                                <img srcset="
+                                    ./images/portfolio/headphones_1x-min.jpg 1x,
+                                    ./images/portfolio/headphones_2x-min.jpg 2x,
+                                    ./images/portfolio/headphones_3x-min.jpg 3x" 
+                                    src="./images/portfolio/headphones_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото навушники">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -198,7 +220,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-5-min.jpg" class="portfolio-projects__foto" alt="Фото коробки" >
+                                <img srcset="
+                                    ./images/portfolio/boxes_1x-min.jpg 1x,
+                                    ./images/portfolio/boxes_2x-min.jpg 2x,
+                                    ./images/portfolio/boxes_3x-min.jpg 3x" 
+                                    src="./images/portfolio/boxes_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото коробки">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -213,7 +240,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-6-min.jpg" class="portfolio-projects__foto" alt="Фото монітор" >
+                                <img srcset="
+                                    ./images/portfolio/monitor_1x-min.jpg 1x,
+                                    ./images/portfolio/monitor_2x-min.jpg 2x,
+                                    ./images/portfolio/monitor_3x-min.jpg 3x" 
+                                    src="./images/portfolio/monitor_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото монітор">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -228,7 +260,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-7-min.jpg" class="portfolio-projects__foto" alt="Фото книга">
+                                <img srcset="
+                                    ./images/portfolio/book_1x-min.jpg 1x,
+                                    ./images/portfolio/book_2x-min.jpg 2x,
+                                    ./images/portfolio/book_3x-min.jpg 3x" 
+                                    src="./images/portfolio/book_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото книга">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -243,7 +280,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-8-min.jpg" class="portfolio-projects__foto" alt="Фото лейба" >
+                                <img srcset="
+                                    ./images/portfolio/lable_1x-min.jpg 1x,
+                                    ./images/portfolio/lable_2x-min.jpg 2x,
+                                    ./images/portfolio/lable_3x-min.jpg 3x" 
+                                    src="./images/portfolio/lable_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото лейба">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -259,7 +301,12 @@
                     <li class="portfolio-projects__item">
                         <a href="" class="portfolio-projects__link">
                             <div class="filter-overlay">
-                                <img src="./images/portfolio-img-9-min.jpg" class="portfolio-projects__foto" alt="Фото ноутбук" >
+                                <img srcset="
+                                    ./images/portfolio/notebook_1x-min.jpg 1x,
+                                    ./images/portfolio/notebook_2x-min.jpg 2x,
+                                    ./images/portfolio/notebook_3x-min.jpg 3x" 
+                                    src="./images/portfolio/notebook_1x-min.jpg"
+                                    class="portfolio-projects__foto" alt="Фото ноутбук">
                                 <p class="filter-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості
                                     про компанію чи приватну
@@ -281,12 +328,12 @@
     <!--Site footer!-->
 
     <footer class="page-footer">
-    
+
         <section class="container page-footer__container">
             <div class="footer-nav">
                 <a href="./index.html" lang="en" class="logo logo--footercolor page-footer__logo"><span
                         class="logo--partcolor">Web</span>Studio</a>
-    
+
                 <address>
                     <ul class="page-footer__contacts">
                         <li class="page-footer__item">
@@ -301,10 +348,10 @@
                     </ul>
                 </address>
             </div>
-    
+
             <div class="networks">
                 <b class="subtitle networks__subtitle">приєднуйтесь</b>
-    
+
                 <ul class="networks__list">
                     <li>
                         <a href="" class="teamicon-instagram-min" aria-label="Instagram">
@@ -323,19 +370,19 @@
                         </a><span lang="en" class="visually-hidden">Linkedin</span>
                     </li>
                 </ul>
-    
+
             </div>
-    
+
             <div class="subscribe">
                 <b class="subtitle subscribe__subtitle">Підпишіться на розсилку</b>
-    
+
                 <form class="subscribe-form">
                     <div class="subscribe-form__field">
-    
+
                         <input type="email" class="subscribe-form__input" name="mail" id="mail" placeholder=" "
                             autocomplete="off" />
                         <label for="mail" class="subscribe-form__label">E-mail</label>
-    
+
                         <button type="submit" class="button-submit">
                             <svg class="button-submit__icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-paperplane"></use>
@@ -344,9 +391,9 @@
                     </div>
                 </form>
             </div>
-    
+
         </section>
-    
+
     </footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
